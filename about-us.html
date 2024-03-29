@@ -9,7 +9,10 @@
     />
     <title>BarleyField Limited</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/barley-logo.png" />
+    <link
+      rel="shortcut icon"
+      href="images/barleyfield-assets/barley-logo-removebg-preview.png"
+    />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- REVOLUTION STYLE SHEETS -->
@@ -20,6 +23,11 @@
     <link rel="stylesheet" href="css/sofbox-style.css" />
     <!-- Responsive -->
     <link rel="stylesheet" href="css/responsive.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -103,14 +111,14 @@
         <div class="row align-items-center">
           <div class="col-sm-12">
             <nav aria-label="breadcrumb" class="text-center iq-breadcrumb-two">
-              <h2 class="title-breadcrumb">About us</h2>
+              <h2 class="title-breadcrumb">About Us</h2>
               <ol class="breadcrumb main-bg">
                 <li class="breadcrumb-item">
                   <a href="index.html"
                     ><i class="fa fa-home mr-1" aria-hidden="true"></i>Home</a
                   >
                 </li>
-                <li class="breadcrumb-item active">About us</li>
+                <li class="breadcrumb-item active">About Us</li>
               </ol>
             </nav>
           </div>
@@ -122,7 +130,7 @@
       <section class="pt-0 sofbox-fullrside-img">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="color: #555">
               <div class="title-box text-left">
                 <h2>Introduction.</h2>
                 <p>
@@ -195,9 +203,9 @@
                 possibilities.
               </p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 center">
               <div class="popup-images align-right">
-                <div class="img-one wow zoomIn" data-wow-duration="0.6s">
+                <!-- <div class="img-one wow zoomIn" data-wow-duration="0.6s">
                   <img src="images/home-1/09.png" alt="image1" />
                 </div>
                 <div class="d-block">
@@ -222,7 +230,51 @@
                   >
                     <img src="images/home-1/12.png" alt="image4" />
                   </div>
+                </div> -->
+                <!-- SWIPER START -->
+                <!-- Slider main container -->
+                <div class="swiper wow fadeInUp">
+                  <!-- Additional required wrapper -->
+                  <div
+                    class="swiper-wrapper"
+                    style="box-shadow: 0 1.5rem 4rem rgba(#000, 0.4)"
+                  >
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/barleyfield-assets/swiper1.jpg"
+                        alt="swiper-1-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/barleyfield-assets/swiper2.jpg"
+                        alt="swiper-1-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/barleyfield-assets/swiper3.jpg"
+                        alt="swiper-1-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/barleyfield-assets/swiper4.jpg"
+                        alt="swiper-4-img"
+                      />
+                    </div>
+
+                    ...
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
                 </div>
+                <!-- SWIPER END -->
               </div>
               <div
                 class="layer_wrap iq-objects style-two right-top"
@@ -230,9 +282,7 @@
               >
                 <span class="iq-objects-02">
                   <img src="images/home-1/13.png" alt="drive02" /> </span
-                ><span class="iq-objects-03">
-                  <img src="images/home-1/08.png" alt="drive02" />
-                </span>
+                ><span class="iq-objects-03"> </span>
               </div>
             </div>
           </div>
@@ -496,8 +546,8 @@
               <a href="index.html">
                 <img
                   class="img-fluid mb-3"
-                  style="width: 11% !important"
-                  src="images/barley-logo.png"
+                  style="width: 20% !important"
+                  src="images/barleyfield-assets/barley-logo-removebg-preview.png"
                   alt="img"
                 />
                 <p style="color: white">BarleyField Limited</p>
@@ -612,6 +662,9 @@
     <script src="js/swiper.min.js"></script>
     <!-- Wow -->
     <script src="js/wow.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
     <script>
       // Create a new Date object
       var currentDate = new Date();

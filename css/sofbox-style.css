@@ -145,6 +145,7 @@ blockquote .blockquote-footer cite {
 
 body {
   overflow-x: hidden !important;
+  font-family: Now;
 }
 
 p {
@@ -1328,7 +1329,7 @@ header #menu-btn.is-active .line:nth-child(3) {
   position: relative;
   display: inline-block;
   background-size: 200% auto;
-  background-image: linear-gradient(to right, rgb(109, 115, 239) 0%, rgb(163, 120, 252, 1) 51%, rgb(109, 115, 239, 0.8) 100%);
+  background-image: linear-gradient(to right, rgb(14,77,42) 0%, rgb(14,77,44) 51%, rgb(14,77,46) 100%);
   box-shadow: 0px 10px 20px 0px rgba(139, 118, 246, 0.4);
   cursor: pointer;
   z-index: 4;
@@ -1343,6 +1344,7 @@ header #menu-btn.is-active .line:nth-child(3) {
 .button.gradient-btn:hover,
 .button.gradient-btn:focus {
   background-position: right center;
+  background: #000;
   color: #ffffff;
 }
 
@@ -4556,7 +4558,7 @@ list
 }
 
 .iq-list li i {
-  color: #6f73f0;
+  color: #0e4d2a;
   margin-right: 10px;
   position: absolute;
   top: 8px;
@@ -5248,7 +5250,7 @@ Testimonial Circle
    PopUp Images Effect left
   ----------------------------------------
  */
-.popup-images {
+/* .popup-images {
   position: relative;
 }
 
@@ -5266,13 +5268,13 @@ Testimonial Circle
 .popup-images.align-left .img-three {
   left: -158px;
   top: 195px;
-}
+} */
 
 
 /*---------------------------------------------------------------------
 PopUp Images Effect  Right
 -----------------------------------------------------------------------*/
-.sofbox-fullrside-img .iq-objects.style-one.right-top .iq-objects-01 img {
+/* .sofbox-fullrside-img .iq-objects.style-one.right-top .iq-objects-01 img {
   right: -318px;
   top: 0px;
   max-width: 140%;
@@ -5307,7 +5309,7 @@ PopUp Images Effect  Right
 .popup-images.align-right .img-four {
   bottom: -8%;
   right: -4%;
-}
+} */
 
 /*
  ----------------------------------------
@@ -6248,7 +6250,7 @@ ul.our-new-team .team-blog {
   text-align: center;
   overflow: hidden;
 }
-
+/* 6260 */ 
 ul.our-new-team .team-blog:before {
   position: absolute;
   content: "";
@@ -6257,10 +6259,11 @@ ul.our-new-team .team-blog:before {
   left: 0;
   top: 0;
   background-image: -moz-linear-gradient(0deg, rgb(109, 115, 239) 0%, rgb(163, 120, 252) 100%);
-  background-image: -webkit-linear-gradient(0deg, rgb(109, 115, 239) 0%, rgb(163, 120, 252) 100%);
+  background-image: -webkit-linear-gradient(0deg, rgb(14,77,42) 0%, rgb(14, 78, 50) 100%);
   background-image: -ms-linear-gradient(0deg, rgb(109, 115, 239) 0%, rgb(163, 120, 252) 100%);
   box-shadow: 0px 10px 20px 0px rgba(139, 118, 246, 0.4);
   opacity: 0;
+  
 }
 
 ul.our-new-team .team-blog .team-description {
@@ -11267,4 +11270,94 @@ blog post
 
 #rev_slider_1_1 .nav-dir-horizontal {
   margin-top: 50px;
+}
+.rev-btn {
+  z-index: 12;
+  background: #0e4d2a !important;
+  transition: all 0.3s ease-in;
+  font-family: Poppins;
+}
+.rev-btn:hover {
+  background: #000000 !important;
+}
+/* STYLING IMAGES IN HOMEPAGE */
+.photo-1 {
+  width: 48%;
+   top: -2rem; 
+   left: 0;
+   box-shadow: 0 1.5rem 4rem rgba(#000000, 0.4);
+   transition: all 0.2s;
+}
+.photo-2 {
+  position: absolute;
+  top: 2rem;
+  right: 23px;
+  width: 48%;
+  box-shadow: 0 1.5rem 4rem rgba(#000000, 0.4);
+  transition: all 0.2s;
+
+}
+.photo-3 {
+  position: absolute;
+  top: 10rem !important;
+	left: 20% !important;
+  width: 48%;
+   box-shadow: 0 1.5rem 4rem rgba(#000000, 0.4);
+   transition: all 0.2s;
+
+
+}
+.photo-1:hover {
+  outline: .5rem solid #0e4d2a;
+	outline-offset: 1rem;
+	transform: scale(1.05) translateY(-0.5rem);
+	box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
+	z-index: 20;
+}
+.photo-2:hover {
+  outline: .5rem solid #0e4d2a;
+	outline-offset: 1rem;
+	transform: scale(1.05) translateY(-0.5rem);
+	box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
+	z-index: 20;
+}
+.photo-3:hover {
+  outline: .5rem solid #0e4d2a;
+	outline-offset: 1rem;
+	transform: scale(1.05) translateY(-0.5rem);
+	box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
+	z-index: 20;
+}
+.img-cont:hover .photo-1 .photo-2 .photo-3:not(:hover) {
+  transform: scale(0.9);
+}
+
+/* REMINDER TO STYLE RESPONSIVE IMAGES */
+.center {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  padding-top: 12rem;
+}
+.center img {
+  border-radius: 3px;
+  /* border: 1px solid #0e4d2a; */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  /* --swiper-navigation-size: 85px; */
+  --swiper-navigation-color: #0e4d2a !important;
+}
+.swiper-button-next::before,
+.swiper-button-prev::before{
+  --swiper-navigation-color: transparent;
+
+
+}
+.swiper-pagination-bullet {
+  /* --swiper-pagination-bullet-width: 50px;
+  --swiper-pagination-bullet-height: 50px; */
+  top: 4rem;
+  --swiper-pagination-color: #0e4d2a;
 }
