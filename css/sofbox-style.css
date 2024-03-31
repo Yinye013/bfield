@@ -147,6 +147,22 @@ body {
   overflow-x: hidden !important;
   font-family: Now;
 }
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  /* background-color: #0e4d2a; */  background-image: -webkit-linear-gradient(0deg, rgba(29, 33, 31, 0.961) 0%, rgba(0, 210, 105, 0.756) 100%);
+
+      /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
 
 p {
   margin-bottom: 30px;
