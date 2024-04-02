@@ -11377,3 +11377,8 @@ blog post
   top: 4rem;
   --swiper-pagination-color: #0e4d2a;
 }
+.home-img:is(:hover, :active) {
+  filter: drop-shadow(2px 2px 2px #042);
+  transition: all 0.3s ease-in;
+  
+}

@@ -17,3 +17,8 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// TODO
+// FIXME
+// function to create an array from objects and return the new array and console log it
+const array = () => {};
