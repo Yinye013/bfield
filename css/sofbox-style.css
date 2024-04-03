@@ -7898,7 +7898,7 @@ contact us social
 
 .iq-breadcrumb-one .breadcrumb-item+.breadcrumb-item::before {
   content: ">";
-  color: #0e4d2a;
+  color: #fff;
 }
 
 .iq-breadcrumb-one .breadcrumb {
